@@ -20,5 +20,9 @@ public class problem29{
         int amount = 21;
         int result = algo(arr,amount);
         System.out.println("Minimum coins needed are " + result);
+
+        //1,2,5
+        //21->5
+        //minimum coins
     }
 }

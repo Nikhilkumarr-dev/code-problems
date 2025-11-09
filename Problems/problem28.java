@@ -1,5 +1,6 @@
 public class problem28{
     
+    //1,2,3,4,5,6,7
     public static void rotate(int[] nums,int k){
         int n=nums.length;
         k = k%n;
