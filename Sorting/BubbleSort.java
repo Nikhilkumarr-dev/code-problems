@@ -1,13 +1,11 @@
-// Bubble Sort works by repeatedly comparing each pair of adjacent elements in an array and swapping them if they are in the wrong order.
-// This process continues until no more swaps are needed — meaning the array is sorted.
-// In each pass, the largest element “bubbles up” to the end of the array.
 import java.util.Arrays;
 public class BubbleSort{
     public static int[] BubbleSortAlg(int arr[]){
         if(arr.length>0){
-            for(int i=0;i<arr.length;i++)
+            for(int i=0;i<arr.length;i++) //1,
             {
-            for(int j=0;j<arr.length-i-1;j++){
+                System.out.println(arr[i]);
+            for(int j=0;j<arr.length-i-1;j++){ //1,
                 if(arr[j]>arr[j+1]){
                     int temp = arr[j];
                     arr[j]=arr[j+1];
