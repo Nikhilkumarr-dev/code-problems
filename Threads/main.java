@@ -1,0 +1,39 @@
+class RunnableDemo implements Runnable{
+    private Thread t;
+    private String threadName;
+    
+    RunnableDemo(String name){
+        threadName=name;
+        System.out.println("creating" + threadName);
+
+    }
+
+    public void run(){
+        try{
+            for(int i=4;i>0;i--){
+                System.out.println(":Thread : " + threadName + ", " + i);
+                Thread.sleep(50);
+            }
+        }catch(InterruptedException e){
+            System.out.println("thread " + threadName + "interrupted");
+        }
+        System.out.println("thread" + threadName + "existing");
+    }
+    public void start(){
+        System.out.println("Starting" + threadName);
+        if(t == null){
+            t = new Thread(this,threadName);
+            t.start();
+        }
+    }
+}
+public class main{
+
+    public static void main(String[] args){
+        RunnableDemo r1 = new RunnableDemo("Thread-1");
+        r1.start();
+
+        RunnableDemo r2 = new RunnableDemo("Thread-2");
+        r2.start();
+    }
+}

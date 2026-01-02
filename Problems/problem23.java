@@ -5,7 +5,6 @@ public class problem23{
         int maxLength = 0;
         Set<Character> charSet = new HashSet<>();
         int left = 0;
-        
         for (int right = 0; right < n; right++) {
             if (!charSet.contains(s.charAt(right))) {
                 charSet.add(s.charAt(right));
@@ -18,16 +17,12 @@ public class problem23{
                 charSet.add(s.charAt(right));
             }
         }
-        
-        return maxLength;
-    
+        return maxLength;   
 }
     public static void main(String []args){
         String str ="abcdbcab"; //abcdbcab->abc,bcd,cdb,cab,abcd-4
         int n=Algo(str);
         System.out.println(n);
-
-
     }
 }
 

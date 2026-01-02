@@ -16,6 +16,7 @@ names.push("mike");
 let testStringArray:string[]
 testStringArray=["djklasj","jdsflkajl"]
 
+
 let testStringOrNumberArray:(string | number)[]
 testStringOrNumberArray=[1,"two"]
 

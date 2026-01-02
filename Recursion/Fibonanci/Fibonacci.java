@@ -1,5 +1,5 @@
 public class Fibonacci{
-    public static int fib(int n){
+    public static int fib(int n){//7
         if(n==1){
             return 1;
         }
@@ -7,6 +7,7 @@ public class Fibonacci{
             return 0;
         }
         return fib(n-1)+fib(n-2);
+                                
     }
     public static void main(String[] args){
         int a = 7;

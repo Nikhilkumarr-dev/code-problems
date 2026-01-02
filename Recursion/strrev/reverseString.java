@@ -5,7 +5,7 @@ public class reverseString{
             return;
         }
         solve(str,index+1);
-        System.out.println("the string"+str.charAt(index));
+        System.out.print(str.charAt(index));
     }
 
     public static void main(String[] args){
