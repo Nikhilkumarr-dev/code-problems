@@ -1,8 +1,6 @@
-
 import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Queue;
-
 public class Bin01 {
     static class Node{
         int data;
@@ -13,8 +11,7 @@ public class Bin01 {
             this.data=val;
             this.left=null;
             this.right=null;
-        }
-        
+        }    
     }
         static int idx=-1;
         static Node buildTree(int[] preorder){
@@ -30,7 +27,6 @@ public class Bin01 {
         //root,left,right
         static void preorderPrint(Node root){
             if(root==null) return;
-
             System.out.print(root.data+ " ");
             preorderPrint(root.left);
             preorderPrint(root.right);
